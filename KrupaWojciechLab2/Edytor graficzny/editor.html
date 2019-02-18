@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Graphical Editor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="editor.css" />
+</head>
+<body>
+    <div id="container">
+        <h1>Edytor Graficzny</h1>
+        <canvas width="600" height="400" id="plotno"></canvas>
+        <span id="button">
+            <button class="btn" id="file">Wybierz plik</button>
+            <input type="file" id="grafika">  
+        </span>
+        <span id="suwaki">
+            <label>Kontrast</label><span class="val"></span><input type="range" class="slider" value="0" min="-100" max="100" step="1" name="kontrast" id="kontrast">
+            <label>Jasnosc</label><span class="val"></span><input type="range" class="slider" value="0" min="-100" max="100" step="1" name="jasnosc" id="jasnosc">
+            <label>Nasycenie</label><span class="val"></span><input type="range" class="slider" value="0" min="-100" max="100" step="1" name="nasycenie" id="nasycenie">
+        </span>
+    </div>
+    <!--JAVASCRIPT-->
+    <script src="editor.js"></script>
+</body>
+</html>
