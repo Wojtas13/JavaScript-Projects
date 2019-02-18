@@ -1,0 +1,35 @@
+body{
+    margin: auto;
+    padding: auto;
+    font-family: Arial, Verdana, Tahoma;
+    background-image: linear-gradient(to right, #2a2a2a, #202020);
+    text-align: center;
+    color: #35cac5;
+    width: 1024px;
+    height: 768px;
+}
+h1{
+    font-size: 48px;
+    margin: 5px 0;
+}
+img{
+    margin: 10px;
+    position: relative;
+}
+button{
+    display: inline-block;
+    border: none;
+    background-color: #3f3f3f;
+    color: #a6a6a6;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #202020;
+    color: #35cac5;
+}

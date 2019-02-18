@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SoundKIT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="dramKit.js"></script>
+</head>
+<body>
+    <h1>Drum Kit</h1>
+    <div id="controls">
+        <button id="rec">Nagrywaj</button>
+        <button id="play">Odtwarzaj</button>
+        <button id="clear">Wyczyść</button>
+    </div>
+
+    <div id="channels">
+        <button id="channel1" value="1">Kanał 1</button>
+        <button id="channel2" value="2">Kanał 2</button>
+        <button id="channel3" value="3">Kanał 3</button>
+        <button id="channel4" value="4">Kanał 4</button>
+    </div>
+
+    <audio src="./sounds/boom.wav" controls id="boom"></audio>
+    <audio src="./sounds/clap.wav" controls id="clap"></audio>
+    <audio src="./sounds/hihat.wav" controls id="hihat"></audio>
+    <audio src="./sounds/kick.wav" controls id="kick"></audio>
+    <audio src="./sounds/openhat.wav" controls id="openhat"></audio>
+    <audio src="./sounds/ride.wav" controls id="ride"></audio>
+    <audio src="./sounds/snare.wav" controls id="snare"></audio>
+    <audio src="./sounds/tink.wav" controls id="tink"></audio>
+    <audio src="./sounds/tom.wav" controls id="tom"></audio>
+
+    <img src="drum.jpg" alt="drum">
+</body>
+</html>
