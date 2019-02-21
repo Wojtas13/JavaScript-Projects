@@ -1,0 +1,23 @@
+#map{
+    height: 60%;
+    text-align: center;
+}
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #3f3f3f;
+    color: #35cac5;
+    font-family: Arial, Verdana;
+}
+h3{
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+}
+#error{
+    margin-bottom: 30px;
+    font-size: 1.5em;
+    display: none;
+    text-align: center;
+}
