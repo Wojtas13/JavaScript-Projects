@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: #35cac5;
+    background-image: linear-gradient(to right, #2a2a2a, #202020);
+}
+
+#header{
+    text-align: left;
+    background: #3f3f3f;
+    margin: 0;
+    height: 100px;
+    font-weight: normal;
+    line-height: 1.1;
+    padding: 40px 40px 20px 40px;
+    font-size: 18px;
+}
+
+h1{
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+.single-task{
+    border: 5px solid #fff;
+}
+
+span{
+    float: right;
+}
+
+.tasks-container{
+    width: 400px;
+}
