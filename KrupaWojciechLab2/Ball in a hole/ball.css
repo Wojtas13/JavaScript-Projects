@@ -1,0 +1,45 @@
+body{
+    margin: auto;
+    padding: auto;
+    font-family: Arial, Verdana, Tahoma;
+    background-image: linear-gradient(to bottom, #2a2a2a, #202020);
+    text-align: center;
+    color: #35cac5;
+}
+h1{
+    font-size: 3em;
+    text-transform: uppercase;
+}
+canvas{
+    border-radius: 3%;
+}
+#header{
+    margin: 20px;
+}
+p, span{
+    font-size: 1.5em;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    #container{
+        min-width: 320px;
+        max-width: 480px;
+        font-size: 50%;
+    }
+    canvas{
+        width: 300px;
+        height: 250px;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    #container{
+        min-width: 481px;
+        max-width: 767px;
+    }
+    canvas{
+        width: 400px;
+        height: 350px;
+    }
+}
