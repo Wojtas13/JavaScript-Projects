@@ -1,10 +1,4 @@
-class Tasks{
-    constructor(title, desc, date){
-        this.title = title;
-        this.desc = desc;
-        this.date = date;
-    }
-}
+class Tasks{}
 
 function getDate() {
     let dateTime = new Date();
@@ -87,4 +81,3 @@ function loadTask() {
     }
     return task;
 }
-
