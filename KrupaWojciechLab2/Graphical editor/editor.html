@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Graphical Editor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="editor.css" />
+</head>
+<body>
+    <div id="container">
+        <h1>Graphical Editor</h1>
+        <canvas width="600" height="400" id="canvas"></canvas>
+        <div class="upload btn">
+            <span>Select file</span>
+            <input type="file">
+        </div>
+        <button class="btn" id="reset">Reset image</button>
+        <span id="ranges">
+            <label>Contrast</label><span class="val"></span><input type="range" class="slider" value="0" min="-100" max="100" step="1" name="contrast" id="contrast">
+            <label>Brightness</label><span class="val"></span><input type="range" class="slider" value="0" min="-100" max="100" step="1" name="brightness" id="brightness">
+            <label>Saturation</label><span class="val"></span><input type="range" class="slider" value="0" min="-100" max="100" step="1" name="saturation" id="saturation">
+        </span>
+    </div>
+    <!--JAVASCRIPT-->
+    <script src="editor.js"></script>
+</body>
+</html>
