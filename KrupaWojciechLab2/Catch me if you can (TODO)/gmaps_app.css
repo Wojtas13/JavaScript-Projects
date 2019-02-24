@@ -6,7 +6,7 @@ html, body{
     height: 100%;
     margin: 0;
     padding: 0;
-    background: #3f3f3f;
+    background: #222222;
     color: #35cac5;
     font-family: Arial, Verdana;
 }
@@ -20,4 +20,25 @@ h3{
     font-size: 1.5em;
     display: none;
     text-align: center;
+}
+#chat{
+    margin: 20px;
+}
+button{
+    border: none;
+    color: #a6a6a6;
+    background-color: #3f3f3f;
+    padding: 8px 10px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px 0;
+    outline: none;
+    text-align: center;
+    display: inline-block;
+}
+button:hover{
+    cursor: pointer;
+    background: #35cac5;
+    color: #202020;
 }

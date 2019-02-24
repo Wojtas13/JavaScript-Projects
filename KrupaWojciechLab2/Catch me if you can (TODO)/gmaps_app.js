@@ -1,9 +1,10 @@
 let uluru, map, marker;
 let ws;
 let players = {};
-let nickname = '1';
+let nickname;
 
 function initMap() {
+    nickname = prompt("Podaj swoj nick");
     uluru = { lat: 52.237, lng: 21.017 };
     map = new google.maps.Map(document.getElementById('map'), {
         zoom: 8,
@@ -60,28 +61,33 @@ function markerControl(event){
 function wsOpen(data) {
     console.log(data);
 }
-function wsMessage(e) {
+function onWSMessage(e) {
     let data = JSON.parse(e.data)
-    if (!players['user' + data.id]) {
-        players['user' + data.id] = new google.maps.Marker({
-            position: { lat: data.lat, lng: data.lng },
-            map: map,
-            animation: google.maps.Animation.DROP,
-            icon: 'marker2.png'
-        })
-    } else {
-        players['user' + data.id].setPosition({
-            lat: data.lat,
-            lng: data.lng
-        })
-    }
+
+    data.forEach((entry) => {
+        if (!players['user' + entry.id]) {
+            players['user' + entry.id] = new google.maps.Marker({
+                position: { lat: entry.lat, lng: entry.lng },
+                map: map,
+                animation: google.maps.Animation.DROP,
+                icon: 'marker2.png'
+            })
+        } else {
+            if(nickname != players['user' + entry.id]){
+                players['user' + entry.id].setPosition({
+                    lat: entry.lat,
+                    lng: entry.lng
+                })
+            }
+        }
+    });
 }
 //WebSocket settings
 function serverWebSocket() {
     let url = 'ws://localhost:8080';
     ws = new WebSocket(url);
     ws.addEventListener('open', wsOpen);
-    ws.addEventListener('message', wsMessage);
+    ws.addEventListener('message', onWSMessage);
 }
 
 //Getting localization
