@@ -5,8 +5,8 @@ body{
     background-image: linear-gradient(to right, #2a2a2a, #202020);
 }
 
-#header{
-    text-align: left;
+#header-container{
+    text-align: center;
     background: #3f3f3f;
     margin: 0;
     height: 100px;
@@ -14,6 +14,7 @@ body{
     line-height: 1.1;
     padding: 40px 40px 20px 40px;
     font-size: 18px;
+    height: 150px;
 }
 
 h1{
@@ -21,15 +22,92 @@ h1{
     margin: 0;
     padding: 0;
 }
-
-.single-task{
-    border: 5px solid #fff;
+#new-task-container{
+    margin-left: 50px;
 }
-
-span{
-    float: right;
+#addNoteBtn{
+    border: none;
+    color: #a6a6a6;
+    background-color: #3f3f3f;
+    padding: 8px 10px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px 0;
+    outline: none;
+    text-align: center;
+    display: inline-block;
+}
+#addNoteBtn:hover{
+    cursor: pointer;
+    background: #202020;
+    color: #35cac5;
 }
 
 .tasks-container{
     width: 400px;
+}
+
+/* Notes */
+.stickerNote{
+    background: #fff;
+    min-width: 250px;
+    min-height: 200px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-top: 20px;
+    border: 3px solid #35cac5;
+}
+.stickerNote .bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    background: #202020;
+    width: 100%;
+}
+.stickerNote textarea{
+    padding: 3px 10px;
+    box-sizing: border-box;
+    min-width: 250px;
+    min-height: 200px;
+    border: none;
+}
+.stickerNote .bar:hover{
+    cursor: move;
+}
+.stickerNote:hover{
+    z-index: 1;
+}
+
+.deleteBtn, .saveBtn{
+    border: none;
+    position: absolute;
+    top: 2px;
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+}
+
+.deleteBtn{
+    border-radius: 20%;
+    right: 5px;
+    top: 5px;
+    background: red;
+}
+
+.saveBtn{
+    border-radius: 20%;
+    left: 5px;
+    top: 5px;
+    background: #35cac5;
+}
+
+.date{
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #fff;
 }
