@@ -84,7 +84,7 @@ function onWSMessage(e) {
 }
 //WebSocket settings
 function serverWebSocket() {
-    let url = 'ws://localhost:8080';
+    let url = 'ws://91.121.6.192:8010';
     ws = new WebSocket(url);
     ws.addEventListener('open', wsOpen);
     ws.addEventListener('message', onWSMessage);
